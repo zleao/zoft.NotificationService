@@ -11,7 +11,7 @@ Provides OneWay and TwoWay message sub/pub capabilities as well as Background an
 
 This project is part of the **zoft** library, which is nothing more than an attempt to put together a set of C# utilities that I've created in my current and past projects.
 
-A lot of this code comes from another library I've developed over the years ([MvxExtensions](https://github.com/zleao/MvvmCross-Extensions)). This library was initialy built to provide some extensions and utilities that work on top of awesome [MvvmCross]() and therefore I never worried to much to have a clean separation of concerns when it comes to MvvmCross libraries dependencies. **zoft** is my attempt to separate what is not MvvmCross dependent. It starts with code ported from MvxExtentions but it will not stop there...
+A lot of this code comes from another library I've developed over the years ([MvxExtensions](https://github.com/zleao/MvvmCross-Extensions)). This library was initialy built to provide some extensions and utilities that work on top of awesome [MvvmCross](https://github.com/MvvmCross/MvvmCross) and therefore I never worried to much to have a clean separation of concerns when it comes to MvvmCross libraries dependencies. **zoft** is my attempt to separate what is not MvvmCross dependent. It starts with code ported from MvxExtentions but it will not stop there...
 
 ## Get started
 
