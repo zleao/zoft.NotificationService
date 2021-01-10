@@ -27,9 +27,25 @@ If you're using a DI (Dependency Injection) approach, you can use the provided i
 If you're not using a DI approach, the important part is to ensure that only one instance is uses throughout the application. You might use a factory or a static property.
 
 
+## Samples
+
+You can find a some samples in my other libraries repositories [here](https://github.com/zleao/MvvmCross-Extensions) and [here](https://github.com/zleao/zoft.TinyMvvmExtensions). Both samples are built for mobile applications using Xamarin but the usage is be similar for other platforms.
+
+
 ##
-
-### And you're ready to go! Samples are comming to better explain how to use the service. In the meaintime, you can check the sample provided in [MvxExtensions.Plugin.Notification](https://github.com/zleao/MvvmCross-Extensions/tree/master/Plugins/Notification). The namespaces are different, but the functionality is similar.
-
    
+## How to use
 
+### Subscribe
+```
+var token = NotificationService.Subscribe<MyMessage>(HandleOneWaySubscriptionAsync);
+
+var token = NotificationService.Subscribe<MyMessage, MyResult>(HandleTwoWaySubscriptionAsync);
+```
+Click [here](https://gist.github.com/zleao/cce569fe9e0f162f399e7a2e03581973) for a complete set of the possible subscription methods
+
+### Unsubscribe
+```
+NotificationService.Unsubscribe(token);
+```
+Click [here](https://gist.github.com/zleao/2aa83875f93c1ebbf866024b16ccd4ef) for a complete set of the possible unsubscription methods
