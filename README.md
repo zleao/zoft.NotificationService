@@ -49,3 +49,13 @@ Click [here](https://gist.github.com/zleao/cce569fe9e0f162f399e7a2e03581973) for
 NotificationService.Unsubscribe(token);
 ```
 Click [here](https://gist.github.com/zleao/2aa83875f93c1ebbf866024b16ccd4ef) for a complete set of the possible unsubscription methods
+
+### Publish
+```
+NotificationService.PublishAsync(myMessage);
+NotificationService.DelayedPublishAsync(myMessage);
+NotificationService.PublishPendingNotificationsAsync(this);
+
+var myResult = NotificationService.PublishAsync<MyResult>(MyMessage);
+```
+Click [here](https://gist.github.com/zleao/e8443efebb3841d774da822e73d844f9) for a complete set of the possible publish methods
